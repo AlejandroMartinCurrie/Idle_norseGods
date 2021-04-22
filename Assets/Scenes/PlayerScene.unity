@@ -3930,6 +3930,7 @@ GameObject:
   - component: {fileID: 2099741101}
   - component: {fileID: 2099741103}
   - component: {fileID: 2099741102}
+  - component: {fileID: 2099741104}
   m_Layer: 5
   m_Name: CharacterSelected
   m_TagString: Untagged
@@ -3994,6 +3995,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099741100}
   m_CullTransparentMesh: 1
+--- !u!114 &2099741104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099741100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5253259060f8ed045966a3acdc410d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  godsNameTXT: {fileID: 1515323569}
+  godsHealth: {fileID: 1754312731}
+  godsDamage: {fileID: 851964170}
+  godsCritDamage: {fileID: 1556154977}
+  godsDefence: {fileID: 432996240}
+  godsAbilityPower: {fileID: 1420100068}
+  godsFireRate: {fileID: 904055620}
 --- !u!1 &2112449308
 GameObject:
   m_ObjectHideFlags: 0
