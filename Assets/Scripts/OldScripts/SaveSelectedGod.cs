@@ -5,10 +5,19 @@ using UnityEngine;
 public class SaveSelectedGod : MonoBehaviour
 {
     public static Gods saveGod;
-   public void SaveGodSelection()
+    public static bool godSelected;
+   public void SaveGodSelection(Gods save)
     {
-        saveGod = FindObjectOfType<GodSelection>().currentGod;
+        saveGod = save;
+        godSelected = true;
         print(saveGod.godName);
     }
-   
+
+
+
+    public   void Update()
+    {
+        
+    }
+
 }
