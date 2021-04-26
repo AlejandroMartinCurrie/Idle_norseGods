@@ -31,14 +31,6 @@ public class EnemyDeathController : MonoBehaviour
         }
     }
 
-
-
-    private void Start()
-    {
-       
-    }
-
-
     private void Update()
     {
         EnemyDead();

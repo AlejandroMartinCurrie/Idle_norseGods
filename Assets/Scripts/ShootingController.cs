@@ -14,7 +14,6 @@ public class ShootingController : MonoBehaviour
     {
         haveShooted = true;
         Instantiate(bulletToShoot, shootLocation);
-
     }
 
     private void Start()
@@ -32,7 +31,8 @@ public class ShootingController : MonoBehaviour
                 elapsedTime = 0f;
                 CreateBullet();
             }
+            haveShooted = false;
         }
-        
+
     }
 }

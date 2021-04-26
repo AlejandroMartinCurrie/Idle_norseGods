@@ -14,16 +14,15 @@ public class EnemySpawnController : MonoBehaviour
         {
             EnemyDeathController.isDead = false;
             Instantiate(enemyCharacter, enemySpawner);
-           
+            
         } 
     }
-
 
     private void Start()
     {
         Instantiate(enemyCharacter, enemySpawner);
+       
     }
-
 
     void Update()
     {
