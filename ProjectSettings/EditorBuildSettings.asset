@@ -9,30 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LogoScene.unity
     guid: 373c5c43415274a429b4e16d6dfe68a9
   - enabled: 1
-    path: Assets/Scenes/HomeScene.unity
-    guid: 7f468d9cf91de0446a037e69d6224b9a
-  - enabled: 1
-    path: Assets/Scenes/DungeonScene.unity
-    guid: 761d54f5407a77e4caa77957561e84bb
-  - enabled: 1
-    path: Assets/Scenes/PlayerScene.unity
-    guid: fd98e34340cd0024997d81610eb22081
-  - enabled: 1
-    path: Assets/Scenes/GodsScene.unity
-    guid: e5763afd01dc7374aa5db09b74d49293
-  - enabled: 1
-    path: Assets/Scenes/InventoryScene.unity
-    guid: c676acd4adc8bd04ba99fc0874de220d
-  - enabled: 1
-    path: Assets/Scenes/CraftScene.unity
-    guid: 0443337c0c75a724e9a7c1e07b7cfdbd
-  - enabled: 1
-    path: Assets/Scenes/AbilitiesScene.unity
-    guid: ef56c4dde9ad4e6448e1cab16a09f011
-  - enabled: 1
-    path: Assets/Scenes/EventScene.unity
-    guid: 329fca1a2796e924e939985c3c314170
-  - enabled: 1
-    path: Assets/Scenes/ShopScene.unity
-    guid: a877ace4ef30ffc46aa170ed2ee9bc1d
+    path: Assets/Scenes/MainScene.unity
+    guid: 4f7941658a9a0974f904831f4e48cb76
   m_configObjects: {}
