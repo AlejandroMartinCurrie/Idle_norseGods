@@ -14,7 +14,7 @@ public class EnemyDeathController : MonoBehaviour
     public void Start()
     {
         isDead = false;
-        enemyHP = GetComponentInChildren<ChangeEnemySprite>().newEnemi.enemyHealth;
+        GetEnemyInfo();
     }
 
 
@@ -38,6 +38,7 @@ public class EnemyDeathController : MonoBehaviour
         if (enemyHP <= 0)
         {
             isDead = true;
+            print("Muerto");
             Destroy(gameObject);
         }
         else

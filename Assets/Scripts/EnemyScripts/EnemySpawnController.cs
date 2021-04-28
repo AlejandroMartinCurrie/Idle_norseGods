@@ -11,15 +11,16 @@ public class EnemySpawnController : MonoBehaviour
 
     public void CreateEnemy()
     {
-        if(EnemyDeathController.isDead)
+        if (EnemyDeathController.isDead)
         {
-            
-            EnemyDeathController.isDead = false;
             Instantiate(enemyCharacter, enemySpawner);
-            FindObjectOfType<EnemyDeathController>().GetEnemyInfo(); 
+            FindObjectOfType<EnemyDeathController>().GetEnemyInfo();
+            EnemyDeathController.isDead = false;
         }
-        
     }
+
+
+
 
     private void Start()
     {

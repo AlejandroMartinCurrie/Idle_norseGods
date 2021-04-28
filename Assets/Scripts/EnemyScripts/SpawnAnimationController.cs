@@ -5,22 +5,43 @@ using UnityEngine;
 public class SpawnAnimationController : MonoBehaviour
 {
     public Animator spawnCircleController;
-    void Start()
+
+
+
+    public void SpawnCircle()
     {
-        
+        spawnCircleController.SetBool("Died", true);
+       
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void StopAnimCircle()
+    {
+        spawnCircleController.SetBool("Died", false);
+    }
+
+
+
+
+    public void Start()
+    {
+        spawnCircleController.Play("SpawnAnimationCircle");
+    }
+
+
+    public void Update()
     {
         if(EnemyDeathController.isDead)
-        {  
-            spawnCircleController.Play("SpawnAnimationCircle");
+        {
+            
+            SpawnCircle();
         }
         else
         {
-           
+            StopAnimCircle();
         }
-     
     }
+
+
+
 }
