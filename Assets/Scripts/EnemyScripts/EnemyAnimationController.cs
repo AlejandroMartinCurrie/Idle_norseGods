@@ -10,13 +10,13 @@ public class EnemyAnimationController : MonoBehaviour
     {
         if(!EnemyDeathController.isDead)
         {
-            enemyAnim.SetBool("Respawn", true);
+            enemyAnim.SetBool("Idle", true);
             
             
         }
         else
         {
-            enemyAnim.SetBool("Respawn", false);
+            enemyAnim.SetBool("Idle", false);
             
         }
     }

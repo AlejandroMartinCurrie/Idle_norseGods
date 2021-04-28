@@ -5,10 +5,12 @@ using UnityEngine;
 public class SpawnAnimationController : MonoBehaviour
 {
     public Animator spawnCircleController;
+    EnemySpawnController enemySpawnController;
 
     public void Start()
     {
         spawnCircleController.Play("SpawnAnimation");
+        enemySpawnController = FindObjectOfType<EnemySpawnController>();
     }
 
 
@@ -16,10 +18,21 @@ public class SpawnAnimationController : MonoBehaviour
     {
         if(EnemyDeathController.isDead)
         {
-            
+            spawnCircleController.SetTrigger("StarSpawn");
+        }
+        else
+        {
+            spawnCircleController.ResetTrigger("StarSpawn");
         }
 
     }
+
+
+    public void CallSpawnFunction()
+    {
+        enemySpawnController.CreateEnemy();
+    }
+
 
 
 

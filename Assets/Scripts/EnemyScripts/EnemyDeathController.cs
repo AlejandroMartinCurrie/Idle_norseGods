@@ -7,10 +7,10 @@ public class EnemyDeathController : MonoBehaviour
 
     public static int enemyHP;
     public static bool isDead;
-    
-    
-    
-    
+    public static int enemydeathCount;
+
+
+
     public void Start()
     {
         //isDead = false;
@@ -38,7 +38,8 @@ public class EnemyDeathController : MonoBehaviour
         if (enemyHP <= 0)
         {
             isDead = true;
-            print("Muerto");
+            enemydeathCount++;
+            //print(enemydeathCount);
             Destroy(gameObject);
         }
         else

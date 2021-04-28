@@ -6,6 +6,7 @@ public class EnemySpawnController : MonoBehaviour
 {
     public GameObject enemyCharacter;
     public Transform enemySpawner;
+    
  
     
 
@@ -19,9 +20,6 @@ public class EnemySpawnController : MonoBehaviour
         }
     }
 
-
-
-
     private void Start()
     {
         Instantiate(enemyCharacter, enemySpawner);
@@ -30,7 +28,7 @@ public class EnemySpawnController : MonoBehaviour
 
     void Update()
     {
-        
-        CreateEnemy();
+
+        //CreateEnemy();
     }
 }
