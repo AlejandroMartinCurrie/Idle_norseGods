@@ -6,26 +6,9 @@ public class SpawnAnimationController : MonoBehaviour
 {
     public Animator spawnCircleController;
 
-
-
-    public void SpawnCircle()
-    {
-        spawnCircleController.SetBool("Died", true);
-       
-    }
-
-
-    public void StopAnimCircle()
-    {
-        spawnCircleController.SetBool("Died", false);
-    }
-
-
-
-
     public void Start()
     {
-        spawnCircleController.Play("SpawnAnimationCircle");
+        spawnCircleController.Play("SpawnAnimation");
     }
 
 
@@ -34,12 +17,8 @@ public class SpawnAnimationController : MonoBehaviour
         if(EnemyDeathController.isDead)
         {
             
-            SpawnCircle();
         }
-        else
-        {
-            StopAnimCircle();
-        }
+
     }
 
 

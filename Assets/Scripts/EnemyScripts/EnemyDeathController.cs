@@ -13,7 +13,7 @@ public class EnemyDeathController : MonoBehaviour
     
     public void Start()
     {
-        isDead = false;
+        //isDead = false;
         GetEnemyInfo();
     }
 
