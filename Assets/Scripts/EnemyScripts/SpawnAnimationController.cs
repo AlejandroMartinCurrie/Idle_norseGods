@@ -16,7 +16,7 @@ public class SpawnAnimationController : MonoBehaviour
 
     public void Update()
     {
-        if(EnemyDeathController.isDead && !CallBossFight.bossIsAlive)
+        if(EnemyDeathController.isDead && !BossConrtoller.bossDead)
         {
             spawnCircleController.SetTrigger("StarSpawn");
         }

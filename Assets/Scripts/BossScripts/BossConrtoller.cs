@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossConrtoller : MonoBehaviour
 {
     public static int bossHP;
     public static bool bossDead;
-
-
     public void Start()
     {
         GetBossInfo();
@@ -34,8 +33,12 @@ public class BossConrtoller : MonoBehaviour
         if(bossHP<=0)
         {
             bossDead = true;
-            CallBossFight.bossIsAlive = false;
+            PlayerEXPgain.playerEXP += GetBossExp.bossExpGain; 
             Destroy(gameObject);
+        }
+        else
+        {
+            bossDead = false;
         }
     }
 

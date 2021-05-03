@@ -9,6 +9,10 @@ public class ShootingController : MonoBehaviour
     public int fireRate;
     float elapsedTime;
     public static bool haveShooted;
+    public static bool autoMode;
+    
+
+
 
     public void CreateBullet()
     {
@@ -18,6 +22,7 @@ public class ShootingController : MonoBehaviour
     private void Start()
     {
         fireRate = 1;
+        autoMode = true;
     }
 
 
@@ -42,18 +47,49 @@ public class ShootingController : MonoBehaviour
         }
     }
 
+
+
+    public void AutoShooting()
+    {
+
+        if(autoMode)
+        {
+            autoMode = false;   
+        }
+        else
+        {
+            autoMode = true;
+        }
+    }
+
+
+    public void ManualShooting()
+    {
+        if(!autoMode)
+        {
+            CreateBullet();
+        }
+       
+    }
+
+
     private void Update()
     {
         elapsedTime += Time.deltaTime;
 
-        if (!EnemyDeathController.isDead)
+        if(autoMode)
         {
-            ShootEnemyController();
+            if (!EnemyDeathController.isDead)
+            {
+                ShootEnemyController();
+            }
+
+            if (!BossConrtoller.bossDead)
+            {
+                ShootBossController();
+            }
         }
 
-        if(CallBossFight.bossIsAlive)
-        {
-            ShootBossController();
-        }
+        
     }
 }

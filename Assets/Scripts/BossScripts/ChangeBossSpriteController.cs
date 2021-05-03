@@ -5,15 +5,11 @@ using UnityEngine;
 public class ChangeBossSpriteController : MonoBehaviour
 {
     public Boss newBoss;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if(CallBossFight.bossIsAlive)
+        if(!BossConrtoller.bossDead)
         {
             GetComponent<SpriteRenderer>().sprite = newBoss.bossSprite;
         }

@@ -24,7 +24,7 @@ public class EnemyHealthBarController : MonoBehaviour
 
         fill.fillAmount = currentHP/fullHP;
 
-        print(currentHP);
-        print(fullHP);
+        //print(currentHP);
+        //print(fullHP);
     }
 }

@@ -9,17 +9,12 @@ public class EnemyDeathController : MonoBehaviour
     public static int enemyHP;
     public static bool isDead;
     public static int enemydeathCount;
-    
-
-
 
     public void Start()
     {
         //isDead = false;
         GetEnemyInfo();
     }
-
-
 
     public void GetEnemyInfo()
     {
@@ -41,6 +36,7 @@ public class EnemyDeathController : MonoBehaviour
         {
             isDead = true;
             enemydeathCount++;
+            PlayerEXPgain.playerEXP+=GetEnemyEXP.expGain;
             //print(enemydeathCount);
             Destroy(gameObject);
         }

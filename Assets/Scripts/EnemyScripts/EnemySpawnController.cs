@@ -5,31 +5,53 @@ using UnityEngine;
 public class EnemySpawnController : MonoBehaviour
 {
     public GameObject enemyCharacter;
+    public GameObject bossCharacter;
+    public GameObject spawner;
+    public GameObject callBossButton;
     public Transform enemySpawner;
+    public static bool callBoss = false;
     
+
+
+
     public void CreateEnemy()
     {
-        if (EnemyDeathController.isDead && !CallBossFight.bossIsAlive)
+        if (!callBoss && EnemyDeathController.isDead)
         {
-            print(CallBossFight.bossIsAlive);
             Instantiate(enemyCharacter, enemySpawner);
             FindObjectOfType<EnemyDeathController>().GetEnemyInfo();
             EnemyDeathController.isDead = false;
-        }
-        
-            
-        
+        } 
     }
 
-    private void Start()
+
+    public void InvokeBoss()
+    {
+        
+        EnemyDeathController.enemyHP = 0;
+        callBoss = true;
+        EnemyDeathController.enemydeathCount = 0;
+        Instantiate(bossCharacter, enemySpawner);
+        callBossButton.SetActive(false);
+    }
+
+
+
+    private void Start()    
     {
         Instantiate(enemyCharacter, enemySpawner);
+        BossConrtoller.bossDead = true;
        
     }
 
     void Update()
     {
+        if(BossConrtoller.bossDead)
+        {
+            CreateEnemy();
+            callBoss = false;
+        }
 
-        //CreateEnemy();
+        
     }
 }

@@ -11,6 +11,7 @@ public class Enemies :ScriptableObject
     public int enemyHealth;
     public Sprite enemySprite;
     public float enemyExpDrop;
+    public bool enemyStageCompleted;
     
     
 }

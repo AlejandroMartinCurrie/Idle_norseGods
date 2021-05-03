@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 668139920173977136}
   - component: {fileID: 8296984528361671493}
   - component: {fileID: 2278511723291813560}
+  - component: {fileID: -3067594241118011057}
   m_Layer: 0
   m_Name: BossController
   m_TagString: Boss
@@ -187,5 +188,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1dd080a2afc8284ba7fbd5b44e293a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3067594241118011057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135094737334629729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be72f50529d83041bf6a21ed8b79489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
