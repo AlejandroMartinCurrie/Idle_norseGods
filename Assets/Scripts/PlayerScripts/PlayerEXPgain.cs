@@ -38,6 +38,6 @@ public class PlayerEXPgain : MonoBehaviour
         }
         
         LevelUP();
-        print(playerLVL);
+        //print(playerLVL);
     }
 }

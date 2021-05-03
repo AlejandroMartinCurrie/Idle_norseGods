@@ -9,7 +9,7 @@ public class Enemies :ScriptableObject
 {
     public string enemyName;
     public int enemyHealth;
-    //public Sprite enemySprite;
+    public Sprite enemySprite;
     public float enemyExpDrop;
     
     

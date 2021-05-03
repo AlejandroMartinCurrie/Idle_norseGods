@@ -19,19 +19,41 @@ public class ShootingController : MonoBehaviour
     {
         fireRate = 1;
     }
+
+
+    public void ShootEnemyController()
+    {
+        if (elapsedTime > 1f / fireRate)
+        {
+            haveShooted = true;
+            elapsedTime = 0f;
+            CreateBullet();
+        }
+    }
+
+
+    public void ShootBossController()
+    {
+        if (elapsedTime > 1f / fireRate)
+        {
+            haveShooted = true;
+            elapsedTime = 0f;
+            CreateBullet();
+        }
+    }
+
     private void Update()
     {
         elapsedTime += Time.deltaTime;
-       
-        if(!EnemyDeathController.isDead)
-        {
-            if (elapsedTime > 1f / fireRate)
-            {
-                haveShooted = true;
-                elapsedTime = 0f;
-                CreateBullet();
-            }  
-        } 
 
+        if (!EnemyDeathController.isDead)
+        {
+            ShootEnemyController();
+        }
+
+        if(CallBossFight.bossIsAlive)
+        {
+            ShootBossController();
+        }
     }
 }
