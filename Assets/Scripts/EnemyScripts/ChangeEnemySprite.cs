@@ -7,7 +7,7 @@ public class ChangeEnemySprite : MonoBehaviour
     public Enemies newEnemi;
     void Start()
     {
-        GetComponent<SpriteRenderer>().sprite = newEnemi.enemySprite;
+        //GetComponent<SpriteRenderer>().sprite = newEnemi.enemySprite;
     }
 
     // Update is called once per frame

@@ -25,13 +25,12 @@ public class EnemySpawnController : MonoBehaviour
     }
 
 
-    public void InvokeBoss()
+    public void CreateBoss()
     {
-        
-        EnemyDeathController.enemyHP = 0;
-        callBoss = true;
-        EnemyDeathController.enemydeathCount = 0;
         Instantiate(bossCharacter, enemySpawner);
+        callBoss = true;
+        EnemyDeathController.enemyHP = 0;
+        EnemyDeathController.enemydeathCount = 0;
         callBossButton.SetActive(false);
     }
 
@@ -49,7 +48,7 @@ public class EnemySpawnController : MonoBehaviour
         if(BossConrtoller.bossDead)
         {
             CreateEnemy();
-            callBoss = false;
+            
         }
 
         

@@ -15,7 +15,7 @@ public class ShootingController : MonoBehaviour
 
 
     public void CreateBullet()
-    {
+    {  
         Instantiate(bulletToShoot, shootLocation);
     }
 
@@ -32,7 +32,8 @@ public class ShootingController : MonoBehaviour
         {
             haveShooted = true;
             elapsedTime = 0f;
-            CreateBullet();
+            //CreateBullet();
+            
         }
     }
 
@@ -43,7 +44,7 @@ public class ShootingController : MonoBehaviour
         {
             haveShooted = true;
             elapsedTime = 0f;
-            CreateBullet();
+            //CreateBullet();
         }
     }
 
@@ -54,11 +55,12 @@ public class ShootingController : MonoBehaviour
 
         if(autoMode)
         {
-            autoMode = false;   
+            autoMode = false;
         }
         else
         {
-            autoMode = true;
+            
+            autoMode = true; 
         }
     }
 
@@ -68,8 +70,8 @@ public class ShootingController : MonoBehaviour
         if(!autoMode)
         {
             CreateBullet();
+            haveShooted = true;
         }
-       
     }
 
 
@@ -88,6 +90,10 @@ public class ShootingController : MonoBehaviour
             {
                 ShootBossController();
             }
+        }
+        else
+        {
+            haveShooted = false;
         }
 
         

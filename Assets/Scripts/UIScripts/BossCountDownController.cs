@@ -19,7 +19,6 @@ public class BossCountDownController : MonoBehaviour
         
     }
 
-
     public void Update()
     {
         fill.fillAmount = EnemyDeathController.enemydeathCount/killsForBoss;
@@ -27,15 +26,11 @@ public class BossCountDownController : MonoBehaviour
         if(EnemyDeathController.enemydeathCount >= killsForBoss)
         {
             bossBarFull = true;
-            bossBar.SetActive(true);
+            bossBar.SetActive(false);
             bossEnemyButton.SetActive(true);
             
         }
-        else if(EnemyDeathController.enemydeathCount <=0 && !BossConrtoller.bossDead)
-        {
-            bossBar.SetActive(false);
-        }
-      
+
         
     }
 
