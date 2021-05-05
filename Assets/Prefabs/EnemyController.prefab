@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3251294366942223459}
   - component: {fileID: 5855785707724156972}
-  - component: {fileID: 7763718206399268189}
   m_Layer: 0
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -83,19 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7763718206399268189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106429994577232307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90fbaf1707bcab14bb6d70b59e76eedf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newEnemi: {fileID: 11400000, guid: bcffd3064a2a9d342a3f1fc27ff29b5e, type: 2}
 --- !u!1 &3514041846127805434
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +195,6 @@ GameObject:
   - component: {fileID: 1022969677280591560}
   - component: {fileID: 2952451772159178394}
   - component: {fileID: 6772901441327235849}
-  - component: {fileID: 1364492850}
   - component: {fileID: -656244308631508065}
   - component: {fileID: 2315064702422546707}
   m_Layer: 0
@@ -313,19 +298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41f6d4e27d917a43ae58c40d7d23098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1364492850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3596609061159065476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e94deae829c0f124fbd18ebba2de2e60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyAnim: {fileID: 2952451772159178394}
 --- !u!114 &-656244308631508065
 MonoBehaviour:
   m_ObjectHideFlags: 0

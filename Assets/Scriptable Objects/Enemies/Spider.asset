@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05b88da24fcbf024b8dc9f7ca957f7e3, type: 3}
-  m_Name: Slime
+  m_Name: Spider
   m_EditorClassIdentifier: 
-  enemyName: Slime
-  enemyHealth: 5
-  enemySprite: {fileID: 21300000, guid: 16ca30284594cd44483b7b26c1435d38, type: 3}
-  enemyExpDrop: 20
+  enemyName: Spider
+  enemyHealth: 10
+  enemySprite: {fileID: 21300000, guid: cab78013b5d55f742835f525dc696ce8, type: 3}
+  enemyExpDrop: 15

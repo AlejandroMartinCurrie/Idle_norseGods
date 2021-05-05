@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b1bd25543664b408e4b5dbb552e5c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 3
+  bulletSpeed: 1
 --- !u!95 &3998324574114460975
 Animator:
   serializedVersion: 3
@@ -163,7 +163,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3db4b76034dcb9849af0d9680cb394e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75d0ab3cb7f1b334893d00bda76ccce5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

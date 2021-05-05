@@ -7,15 +7,22 @@ public class BossConrtoller : MonoBehaviour
 {
     public static int bossHP;
     public static bool bossDead;
+    public static bool bossStageCleared;
+    
+
     public void Start()
     {
         GetBossInfo();
+        bossStageCleared = false;
     }
 
     public void GetBossInfo()
     {
-        bossHP = GetComponentInChildren<ChangeBossSpriteController>().newBoss.bossHealth;
-        bossDead = GetComponentInChildren<ChangeBossSpriteController>().newBoss.bossCompleted;
+        bossHP = StageController.currentBoss.bossHealth;
+        bossDead = StageController.currentBoss.bossCompleted;
+        GetComponentInChildren<SpriteRenderer>().sprite = StageController.currentBoss.bossSprite;
+        //bossHP = GetComponentInChildren<ChangeBossSpriteController>().newBoss.bossHealth;
+        //bossDead = GetComponentInChildren<ChangeBossSpriteController>().newBoss.bossCompleted;
     }
 
     private void OnTriggerEnter2D(Collider2D bulletCol)
@@ -32,8 +39,12 @@ public class BossConrtoller : MonoBehaviour
     {
         if(bossHP<=0)
         {
+            PlayerEXPgain.playerEXP += StageController.currentBoss.bossExp;
+            StageController.stageCounter++;
+            PlayerPrefs.SetInt("Stage", StageController.stageCounter); 
+            bossStageCleared = true;
             bossDead = true;
-            PlayerEXPgain.playerEXP += GetBossExp.bossExpGain; 
+            EnemySpawnController.callBoss = false;
             Destroy(gameObject);
         }
         else

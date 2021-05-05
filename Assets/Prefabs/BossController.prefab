@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 121718887049668560}
   - component: {fileID: 1655316960635062470}
-  - component: {fileID: 5718607678671580420}
   m_Layer: 0
   m_Name: BossSprite
   m_TagString: Untagged
@@ -72,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f3f8151b338e3204994cfa9afbbe2bce, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -80,22 +79,9 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5718607678671580420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883056521929246653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ccd4624e551ccd4cab5f9e4f4e267f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newBoss: {fileID: 11400000, guid: 5d75f6b18345fd84095e8e6010d4caf7, type: 2}
 --- !u!1 &7135094737334629729
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +94,6 @@ GameObject:
   - component: {fileID: 668139920173977136}
   - component: {fileID: 8296984528361671493}
   - component: {fileID: 2278511723291813560}
-  - component: {fileID: -3067594241118011057}
   m_Layer: 0
   m_Name: BossController
   m_TagString: Boss
@@ -144,7 +129,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13096559, y: -0.03226775}
+  m_Offset: {x: 0.007057011, y: 0.05129853}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -155,7 +140,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7124763, y: 1.6507381}
+  m_Size: {x: 1.9257144, y: 1.8178706}
   m_EdgeRadius: 0
 --- !u!50 &8296984528361671493
 Rigidbody2D:
@@ -188,17 +173,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1dd080a2afc8284ba7fbd5b44e293a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-3067594241118011057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7135094737334629729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be72f50529d83041bf6a21ed8b79489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

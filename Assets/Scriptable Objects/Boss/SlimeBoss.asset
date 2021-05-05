@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d8d03dc943426c49a03c7e931325e19, type: 3}
-  m_Name: 2nd Test Boss
+  m_Name: SlimeBoss
   m_EditorClassIdentifier: 
-  bossName: boss 2
-  bossHealth: 30
+  bossName: SlimeBoss
+  bossHealth: 10
   bossDMG: 10
-  bossSprite: {fileID: 0}
+  bossSprite: {fileID: 21300000, guid: f3f8151b338e3204994cfa9afbbe2bce, type: 3}
   bossCompleted: 0
-  bossExp: 30
+  bossExp: 200

@@ -11,10 +11,9 @@ public class EnemyHealthBarController : MonoBehaviour
     public int currentHP;
     
 
-
     private void Start()
     {
-        fullHP = FindObjectOfType<ChangeEnemySprite>().newEnemi.enemyHealth;
+        fullHP = StageController.currentEnemy.enemyHealth;
         
     }
 

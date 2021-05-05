@@ -6,7 +6,7 @@ public class ShootingController : MonoBehaviour
 {
     public GameObject bulletToShoot;
     public Transform shootLocation;
-    public int fireRate;
+    public float fireRate;
     float elapsedTime;
     public static bool haveShooted;
     public static bool autoMode;
@@ -32,7 +32,7 @@ public class ShootingController : MonoBehaviour
         {
             haveShooted = true;
             elapsedTime = 0f;
-            //CreateBullet();
+            CreateBullet();
             
         }
     }
@@ -44,7 +44,7 @@ public class ShootingController : MonoBehaviour
         {
             haveShooted = true;
             elapsedTime = 0f;
-            //CreateBullet();
+            CreateBullet();
         }
     }
 

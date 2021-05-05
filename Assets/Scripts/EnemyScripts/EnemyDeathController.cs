@@ -18,7 +18,12 @@ public class EnemyDeathController : MonoBehaviour
 
     public void GetEnemyInfo()
     {
-        enemyHP = GetComponentInChildren<ChangeEnemySprite>().newEnemi.enemyHealth;
+        enemyHP = StageController.currentEnemy.enemyHealth;
+        GetComponentInChildren<SpriteRenderer>().sprite = StageController.currentEnemy.enemySprite;
+
+
+
+        //enemyHP = GetComponentInChildren<ChangeEnemySprite>().newEnemi.enemyHealth;
     }
 
     private void OnTriggerEnter2D(Collider2D bulletCol)

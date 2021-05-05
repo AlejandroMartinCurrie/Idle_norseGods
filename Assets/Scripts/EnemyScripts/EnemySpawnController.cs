@@ -9,7 +9,7 @@ public class EnemySpawnController : MonoBehaviour
     public GameObject spawner;
     public GameObject callBossButton;
     public Transform enemySpawner;
-    public static bool callBoss = false;
+    public static bool callBoss;
     
 
 
@@ -38,19 +38,19 @@ public class EnemySpawnController : MonoBehaviour
 
     private void Start()    
     {
+        callBoss = false;
         Instantiate(enemyCharacter, enemySpawner);
         BossConrtoller.bossDead = true;
-       
     }
 
     void Update()
     {
-        if(BossConrtoller.bossDead)
+        if(!BossConrtoller.bossStageCleared)
         {
-            CreateEnemy();
             
         }
+        CreateEnemy();
 
-        
+
     }
 }

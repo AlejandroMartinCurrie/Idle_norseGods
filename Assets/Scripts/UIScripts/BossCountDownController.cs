@@ -7,7 +7,6 @@ public class BossCountDownController : MonoBehaviour
 {
     public Image fill;
     public static bool bossBarFull;
-    public float killsForBoss;
     public GameObject bossEnemyButton;
     public GameObject bossBar;
 
@@ -15,15 +14,14 @@ public class BossCountDownController : MonoBehaviour
     public void Start()
     {
         bossBarFull = false;
-        killsForBoss = 10f;
         
     }
 
     public void Update()
     {
-        fill.fillAmount = EnemyDeathController.enemydeathCount/killsForBoss;
+        fill.fillAmount = EnemyDeathController.enemydeathCount/StageController.killsNeededForBoss;
 
-        if(EnemyDeathController.enemydeathCount >= killsForBoss)
+        if(EnemyDeathController.enemydeathCount >= StageController.killsNeededForBoss)
         {
             bossBarFull = true;
             bossBar.SetActive(false);

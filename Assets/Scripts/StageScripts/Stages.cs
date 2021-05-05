@@ -9,5 +9,6 @@ public class Stages : ScriptableObject
     public Boss stageBoss;
     public Enemies stageEnemy;
     public Sprite backgroundImage;
+    public float killsForBoss;
     
 }

@@ -7,7 +7,7 @@ public class GetEnemyEXP : MonoBehaviour
     public static float expGain;
     void Start()
     {
-        expGain = GetComponentInChildren<ChangeEnemySprite>().newEnemi.enemyExpDrop;
+        expGain = StageController.currentEnemy.enemyExpDrop;
     }
 
     // Update is called once per frame
