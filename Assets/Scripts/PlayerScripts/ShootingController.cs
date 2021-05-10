@@ -86,7 +86,7 @@ public class ShootingController : MonoBehaviour
                 ShootEnemyController();
             }
 
-            if (!BossConrtoller.bossDead)
+            if (!BossController.bossDead)
             {
                 ShootBossController();
             }

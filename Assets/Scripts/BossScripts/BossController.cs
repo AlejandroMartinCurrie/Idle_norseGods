@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BossConrtoller : MonoBehaviour
+public class BossController : MonoBehaviour
 {
     public static int bossHP;
     public static bool bossDead;
     public static bool bossStageCleared;
+    public static bool bossCombat;
+    public static int bossDamage;
     
 
     public void Start()
@@ -20,20 +22,13 @@ public class BossConrtoller : MonoBehaviour
     {
         bossHP = StageController.currentBoss.bossHealth;
         bossDead = StageController.currentBoss.bossCompleted;
+        bossDamage = StageController.currentBoss.bossDMG;
         GetComponentInChildren<SpriteRenderer>().sprite = StageController.currentBoss.bossSprite;
         //bossHP = GetComponentInChildren<ChangeBossSpriteController>().newBoss.bossHealth;
         //bossDead = GetComponentInChildren<ChangeBossSpriteController>().newBoss.bossCompleted;
     }
 
-    private void OnTriggerEnter2D(Collider2D bulletCol)
-    {
-        if (bulletCol.CompareTag("Bullet"))
-        {
-            bossHP -= BulletController.bulletDamage;
-            //print(enemyHP);
-            Destroy(bulletCol.gameObject);
-        }
-    }
+   
 
     public void BossDeathController()
     {
@@ -41,7 +36,8 @@ public class BossConrtoller : MonoBehaviour
         {
             PlayerEXPgain.playerEXP += StageController.currentBoss.bossExp;
             StageController.stageCounter++;
-            PlayerPrefs.SetInt("Stage", StageController.stageCounter); 
+            PlayerPrefs.SetInt("Stage", StageController.stageCounter);
+            bossCombat = false;
             bossStageCleared = true;
             bossDead = true;
             EnemySpawnController.callBoss = false;

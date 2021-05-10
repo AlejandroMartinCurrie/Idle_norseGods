@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d8d03dc943426c49a03c7e931325e19, type: 3}
-  m_Name: SlimeBoss
+  m_Script: {fileID: 11500000, guid: 663ededde4a18244d94c5d37390435ff, type: 3}
+  m_Name: Farmer
   m_EditorClassIdentifier: 
-  bossName: SlimeBoss
-  bossHealth: 40
-  bossDMG: 2
-  bossSprite: {fileID: 21300000, guid: f3f8151b338e3204994cfa9afbbe2bce, type: 3}
-  bossCompleted: 0
-  bossExp: 200
+  godName: Farmer
+  godImage: {fileID: 21300000, guid: 3e884adc8ff6a994a8463db56983aaa7, type: 3}
+  godHealth: 20
+  godDamage: 0

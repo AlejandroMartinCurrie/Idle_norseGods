@@ -30,7 +30,8 @@ public class EnemyDeathController : MonoBehaviour
     {
         if(bulletCol.CompareTag("Bullet"))
         {
-            enemyHP -= BulletController.bulletDamage;
+            enemyHP -= PlayerCharecterStats.playerOverAllDMG;
+            //enemyHP -= BulletController.bulletDamage;
             //print(enemyHP);
             Destroy(bulletCol.gameObject);  
         }

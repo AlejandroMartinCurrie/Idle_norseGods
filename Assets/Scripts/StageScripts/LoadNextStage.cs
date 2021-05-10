@@ -8,9 +8,9 @@ public class LoadNextStage : MonoBehaviour
 
     void Update()
     {
-        if(BossConrtoller.bossStageCleared)
+        if(BossController.bossStageCleared)
         {
-            BossConrtoller.bossStageCleared = false;
+            BossController.bossStageCleared = false;
             FindObjectOfType<GameFlowController>().loadScene("MainScene");
         }
     }

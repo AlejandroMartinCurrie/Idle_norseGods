@@ -29,6 +29,8 @@ public class EnemySpawnController : MonoBehaviour
     {
         Instantiate(bossCharacter, enemySpawner);
         callBoss = true;
+        BossController.bossCombat = true;
+        print(BossController.bossCombat);
         EnemyDeathController.enemyHP = 0;
         EnemyDeathController.enemydeathCount = 0;
         callBossButton.SetActive(false);
@@ -40,15 +42,15 @@ public class EnemySpawnController : MonoBehaviour
     {
         callBoss = false;
         Instantiate(enemyCharacter, enemySpawner);
-        BossConrtoller.bossDead = true;
+        BossController.bossDead = true;
     }
 
     void Update()
     {
-        if(!BossConrtoller.bossStageCleared)
-        {
+        //if(!BossConrtoller.bossStageCleared)
+        //{
             
-        }
+        //}
         CreateEnemy();
 
 

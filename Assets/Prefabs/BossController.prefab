@@ -82,6 +82,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2175346633130914730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3245655625844626269}
+  m_Layer: 0
+  m_Name: BossShootLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3245655625844626269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2175346633130914730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.503, y: -0.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5726156522608897765}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7135094737334629729
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +124,7 @@ GameObject:
   - component: {fileID: 668139920173977136}
   - component: {fileID: 8296984528361671493}
   - component: {fileID: 2278511723291813560}
+  - component: {fileID: 1548990851033534335}
   m_Layer: 0
   m_Name: BossController
   m_TagString: Boss
@@ -113,6 +144,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 121718887049668560}
+  - {fileID: 3245655625844626269}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -129,7 +161,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.007057011, y: 0.05129853}
+  m_Offset: {x: 0.16081196, y: 0.06677729}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -140,7 +172,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9257144, y: 1.8178706}
+  m_Size: {x: 0.92863667, y: 1.320989}
   m_EdgeRadius: 0
 --- !u!50 &8296984528361671493
 Rigidbody2D:
@@ -172,6 +204,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 7135094737334629729}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1dd080a2afc8284ba7fbd5b44e293a0, type: 3}
+  m_Script: {fileID: 11500000, guid: a470a4c4e27d01642811ab1198b500c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1548990851033534335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135094737334629729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fe618aaacbcd742afbb6a3a6ac5f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossBullet: {fileID: 8753092776154198737, guid: ec41bda378841d443968a754fe4f7498, type: 3}
+  shootingLocation: {fileID: 3245655625844626269}
+  elapsedTime: 0
