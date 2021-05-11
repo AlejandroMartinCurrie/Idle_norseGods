@@ -40,6 +40,8 @@ public class BossController : MonoBehaviour
             bossCombat = false;
             bossStageCleared = true;
             bossDead = true;
+            GoldCurrancyController.currentCurrancy += StageController.currentBoss.bossGoldDrop;
+            PlayerPrefs.SetInt("Gold", GoldCurrancyController.currentCurrancy);
             EnemySpawnController.callBoss = false;
             Destroy(gameObject);
         }

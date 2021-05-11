@@ -16,3 +16,4 @@ MonoBehaviour:
   enemyHealth: 5
   enemySprite: {fileID: -1793482511892762602, guid: 43efc590b73f2db409a7202cd1f4aecb, type: 3}
   enemyExpDrop: 10
+  goldDrop: 3

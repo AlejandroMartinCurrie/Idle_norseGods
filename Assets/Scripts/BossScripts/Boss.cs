@@ -10,5 +10,6 @@ public class Boss : ScriptableObject
     public int bossDMG;
     public Sprite bossSprite;
     public bool bossCompleted;
+    public int bossGoldDrop;
     public float bossExp;
 }

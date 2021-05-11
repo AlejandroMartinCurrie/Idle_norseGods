@@ -43,6 +43,8 @@ public class EnemyDeathController : MonoBehaviour
             isDead = true;
             enemydeathCount++;
             PlayerEXPgain.playerEXP+=GetEnemyEXP.expGain;
+            GoldCurrancyController.currentCurrancy += StageController.currentEnemy.goldDrop;
+            PlayerPrefs.SetInt("Gold", GoldCurrancyController.currentCurrancy);
             //print(enemydeathCount);
             Destroy(gameObject);
         }
