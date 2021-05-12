@@ -15,6 +15,7 @@ public class PlayerEXPgain : MonoBehaviour
         playerEXP = 0;
         playerLVL = 1;
         expForNextLVL = 50f;
+        playerLVL = PlayerPrefs.GetInt("Player Level");
     }
     public void LevelUP()
     {
@@ -22,6 +23,7 @@ public class PlayerEXPgain : MonoBehaviour
         if(playerEXP>expForNextLVL)
         {
             playerLVL++;
+            PlayerPrefs.SetInt("Player Level", playerLVL);
             availableStatsPoints++;
             playerEXP = 0;
             expForNextLVL += expForNextLVL + 100f;
@@ -31,5 +33,6 @@ public class PlayerEXPgain : MonoBehaviour
     void Update()
     {
         LevelUP();
+        
     }
 }

@@ -6,6 +6,7 @@ using TMPro;
 public class DisplayPlayerLVL : MonoBehaviour
 {
     public TMP_Text playerLVL;
+    public TMP_Text playerLVL_Stats;
 
 
     void Start()
@@ -17,5 +18,6 @@ public class DisplayPlayerLVL : MonoBehaviour
     void Update()
     {
         playerLVL.text = PlayerEXPgain.playerLVL.ToString();
+        playerLVL_Stats.text = PlayerEXPgain.playerLVL.ToString();
     }
 }

@@ -9,6 +9,8 @@ public class PlayerCharecterStats : MonoBehaviour
     public Gods currentSelectedGod;
     public static int playerBaseHealth;
     public static int playerBaseDamage;
+    public static string playerGodName;
+    public static Sprite playerGodSprite;
 
     void Start()
     {
@@ -19,14 +21,15 @@ public class PlayerCharecterStats : MonoBehaviour
         playerOverAllHP = currentSelectedGod.godHealth + playerBaseHealth;
         playerOverAllDMG = currentSelectedGod.godDamage + playerBaseDamage;
         HealthBarControllerPlayer.maxHP = playerOverAllHP;
+        playerGodName = currentSelectedGod.godName;
+        playerGodSprite = currentSelectedGod.godImage;
+        //PlayerPrefs.SetString("Gods Name", playerGodName);
 
-        //print(playerOverAllHP);
- 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 }

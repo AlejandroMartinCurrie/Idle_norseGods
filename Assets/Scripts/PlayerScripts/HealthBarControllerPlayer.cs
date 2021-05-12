@@ -17,6 +17,6 @@ public class HealthBarControllerPlayer : MonoBehaviour
     {
         currentHP = PlayerCharecterStats.playerOverAllHP;
         healthFill.fillAmount = currentHP / maxHP;
-        print(maxHP);
+        //print(maxHP);
     }
 }
