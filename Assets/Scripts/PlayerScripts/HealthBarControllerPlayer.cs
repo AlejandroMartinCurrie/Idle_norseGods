@@ -7,11 +7,11 @@ public class HealthBarControllerPlayer : MonoBehaviour
 {
     public Image healthFill;
     public static float maxHP;
-    public int currentHP;
+    public static int currentHP;
 
     void Start()
     {
-        maxHP = PlayerCharecterStats.playerOverAllHP;
+        maxHP = PlayerPrefs.GetFloat("MaximumHP");
     }
     void Update()
     {

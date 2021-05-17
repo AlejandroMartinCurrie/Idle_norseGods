@@ -39,7 +39,7 @@ public class StageController : MonoBehaviour
         stageCounter = PlayerPrefs.GetInt("Stage");
         GetStageInfo();
         changeBackground.GetComponent<SpriteRenderer>().sprite = currentBackground;
-        //print("Estas en el stage " + stageCounter);
+        print("Estas en el stage " + stageCounter);
     }
 
     // Update is called once per frame

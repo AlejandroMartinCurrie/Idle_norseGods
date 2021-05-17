@@ -11,6 +11,10 @@ public class StatsCanvasController : MonoBehaviour
     public TMP_Text currentGodsName;
     public Image currntGodsImage;
 
+    public TMP_Text playerHpStats;
+    public TMP_Text playerAttkStats;
+
+
     public void ActivatePlayerStats()
     {
         if(StatsCanvasActive)
@@ -27,6 +31,7 @@ public class StatsCanvasController : MonoBehaviour
 
     void Start()
     {
+        
     
         
     }
@@ -36,6 +41,9 @@ public class StatsCanvasController : MonoBehaviour
     {
         currentGodsName.text = PlayerCharecterStats.playerGodName;
         currntGodsImage.sprite = PlayerCharecterStats.playerGodSprite;
+
+        playerHpStats.text = PlayerCharecterStats.playerOverAllHP.ToString();
+        playerAttkStats.text = PlayerCharecterStats.playerOverAllDMG.ToString();
 
     }
 }
