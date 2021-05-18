@@ -15,4 +15,4 @@ MonoBehaviour:
   godName: Farmer
   godImage: {fileID: 21300000, guid: 3e884adc8ff6a994a8463db56983aaa7, type: 3}
   godHealth: 20
-  godDamage: 0
+  godDamage: 1

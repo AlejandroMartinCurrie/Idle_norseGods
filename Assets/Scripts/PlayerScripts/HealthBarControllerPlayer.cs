@@ -12,13 +12,14 @@ public class HealthBarControllerPlayer : MonoBehaviour
     void Start()
     {
         maxHP = PlayerCharecterStats.playerOverAllHP;
-        print(maxHP);
-        //maxHP = PlayerPrefs.GetFloat("MaximumHP");
+        //print(maxHP);
+       
     }
     void Update()
     {
-        currentHP = PlayerPrefs.GetInt("CurrentHP");
-        healthFill.fillAmount = currentHP / 100;
+        currentHP = PlayerCharecterStats.playerOverAllHP;
+        maxHP = PlayerCharecterStats.maximumHealth;
+        healthFill.fillAmount = currentHP / maxHP;
         //print(maxHP);
     }
 }

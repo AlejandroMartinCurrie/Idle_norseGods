@@ -13,6 +13,8 @@ public class StatsCanvasController : MonoBehaviour
 
     public TMP_Text playerHpStats;
     public TMP_Text playerAttkStats;
+    public TMP_Text healthGoldNeeded;
+    public TMP_Text dmgGoldNeeded;
 
 
     public void ActivatePlayerStats()
@@ -32,8 +34,6 @@ public class StatsCanvasController : MonoBehaviour
     void Start()
     {
         
-    
-        
     }
 
     
@@ -42,8 +42,16 @@ public class StatsCanvasController : MonoBehaviour
         currentGodsName.text = PlayerCharecterStats.playerGodName;
         currntGodsImage.sprite = PlayerCharecterStats.playerGodSprite;
 
-        playerHpStats.text = PlayerCharecterStats.playerOverAllHP.ToString();
+        playerHpStats.text = PlayerCharecterStats.maximumHealth.ToString();
         playerAttkStats.text = PlayerCharecterStats.playerOverAllDMG.ToString();
+        healthGoldNeeded.text = UpgradeStatsController.healthGoldNeeded.ToString() + " g";
+        dmgGoldNeeded.text = UpgradeStatsController.dmgGoldNeeded.ToString() + " g";
+
+
+
+
+
+
 
     }
 }
