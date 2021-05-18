@@ -52,7 +52,8 @@ public class UpgradeStatsController : MonoBehaviour
     {
         playerHealthUpgradeUI();
 
-        PlayerPrefs.SetInt("MaximumHP", PlayerCharecterStats.playerOverAllHP);
+        PlayerPrefs.SetInt("MaximumHP",PlayerCharecterStats.playerOverAllHP);
+        print(PlayerPrefs.GetInt("MaximumHP"));
         
     }
 

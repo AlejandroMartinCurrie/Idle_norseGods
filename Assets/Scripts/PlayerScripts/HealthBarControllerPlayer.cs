@@ -6,17 +6,19 @@ using UnityEngine.UI;
 public class HealthBarControllerPlayer : MonoBehaviour
 {
     public Image healthFill;
-    public static float maxHP;
+    public float maxHP;
     public static int currentHP;
 
     void Start()
     {
-        maxHP = PlayerPrefs.GetFloat("MaximumHP");
+        maxHP = PlayerCharecterStats.playerOverAllHP;
+        print(maxHP);
+        //maxHP = PlayerPrefs.GetFloat("MaximumHP");
     }
     void Update()
     {
-        currentHP = PlayerCharecterStats.playerOverAllHP;
-        healthFill.fillAmount = currentHP / maxHP;
+        currentHP = PlayerPrefs.GetInt("CurrentHP");
+        healthFill.fillAmount = currentHP / 100;
         //print(maxHP);
     }
 }

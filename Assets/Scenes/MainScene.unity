@@ -1789,6 +1789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthFill: {fileID: 1126238030}
+  maxHP: 0
 --- !u!1 &594073668
 GameObject:
   m_ObjectHideFlags: 0
