@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d8d03dc943426c49a03c7e931325e19, type: 3}
-  m_Name: SlimeBoss
+  m_Name: SnakeBoss
   m_EditorClassIdentifier: 
-  bossName: SlimeBoss
-  bossHealth: 40
-  bossDMG: 2
-  bossSprite: {fileID: 21300000, guid: f3f8151b338e3204994cfa9afbbe2bce, type: 3}
+  bossName: Medussa
+  bossHealth: 1000
+  bossDMG: 20
+  bossSprite: {fileID: 21300000, guid: b59e23321ca877749bc641e4fa2270dd, type: 3}
   bossCompleted: 0
-  bossGoldDrop: 100
-  bossExp: 40
+  bossGoldDrop: 10000
+  bossExp: 10000

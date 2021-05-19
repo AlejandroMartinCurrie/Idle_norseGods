@@ -8,26 +8,27 @@ public class GoldCurrancyController : MonoBehaviour
 {
     public TMP_Text coinCurrancy;
     public static int currentCurrancy;
-    
-    
+    public static ParticleSystem coinsFall;
+
+
     public void GetEnemyGold()
     {
+       
         currentCurrancy += StageController.currentEnemy.goldDrop;
+        
         PlayerPrefs.SetInt("Gold", currentCurrancy);
         coinCurrancy.text = currentCurrancy.ToString();
-        //print(currentCurrancy);
     }
 
 
     public void GetBossGold()
     {
         currentCurrancy += StageController.currentBoss.bossGoldDrop;
+       
         PlayerPrefs.SetInt("Gold", currentCurrancy);
         coinCurrancy.text = currentCurrancy.ToString();
     }
-    
-    
-    
+
     void Start()
     {
         currentCurrancy = PlayerPrefs.GetInt("Gold");
@@ -38,5 +39,6 @@ public class GoldCurrancyController : MonoBehaviour
     void Update()
     {
         coinCurrancy.text = currentCurrancy.ToString();
+
     }
 }

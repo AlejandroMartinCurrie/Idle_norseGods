@@ -17,4 +17,5 @@ MonoBehaviour:
   bossDMG: 4
   bossSprite: {fileID: 21300000, guid: 8e05289dbb26df04ebf8be99ba97d838, type: 3}
   bossCompleted: 0
-  bossExp: 400
+  bossGoldDrop: 150
+  bossExp: 60

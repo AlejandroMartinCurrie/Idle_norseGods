@@ -10,6 +10,7 @@ public class EnemyDeathController : MonoBehaviour
     public static bool isDead;
     public static int enemydeathCount;
 
+
     public void Start()
     {
         //isDead = false;
@@ -33,8 +34,11 @@ public class EnemyDeathController : MonoBehaviour
             enemyHP -= PlayerCharecterStats.playerOverAllDMG;
             //enemyHP -= BulletController.bulletDamage;
             //print(enemyHP);
-            Destroy(bulletCol.gameObject);  
+            Destroy(bulletCol.gameObject);
+           
+
         }
+
     }
     private void EnemyDead()
     {
@@ -60,6 +64,7 @@ public class EnemyDeathController : MonoBehaviour
         
         EnemyDead();
         
+
     }
 
 

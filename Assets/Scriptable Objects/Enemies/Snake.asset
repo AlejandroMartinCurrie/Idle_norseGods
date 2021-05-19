@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d8d03dc943426c49a03c7e931325e19, type: 3}
-  m_Name: SlimeBoss
+  m_Script: {fileID: 11500000, guid: 05b88da24fcbf024b8dc9f7ca957f7e3, type: 3}
+  m_Name: Snake
   m_EditorClassIdentifier: 
-  bossName: SlimeBoss
-  bossHealth: 40
-  bossDMG: 2
-  bossSprite: {fileID: 21300000, guid: f3f8151b338e3204994cfa9afbbe2bce, type: 3}
-  bossCompleted: 0
-  bossGoldDrop: 100
-  bossExp: 40
+  enemyName: snake
+  enemyHealth: 30
+  enemySprite: {fileID: 21300000, guid: bdad984d610699443a1ce11dd94d4d8a, type: 3}
+  enemyExpDrop: 25
+  goldDrop: 8

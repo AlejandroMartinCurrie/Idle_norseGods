@@ -76,7 +76,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.640625, y: 0.65625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -298,6 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41f6d4e27d917a43ae58c40d7d23098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSprite: {fileID: 0}
 --- !u!114 &-656244308631508065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,7 +387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4667024548298201788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 663, y: -409, z: 0}
+  m_LocalPosition: {x: 663, y: -466, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 664629357469358466}

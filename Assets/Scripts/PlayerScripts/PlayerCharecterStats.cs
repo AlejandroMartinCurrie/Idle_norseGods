@@ -23,9 +23,9 @@ public class PlayerCharecterStats : MonoBehaviour
         UpgradeStatsController.dmgUpgraded = PlayerPrefs.GetInt("SavedDataDMG");
 
         PlayerHealthStatsController();
-        print(playerOverAllDMG);
+        //print(playerOverAllDMG);
         PlayerDamageStatsController();
-        print(playerOverAllDMG);
+        //print(playerOverAllDMG);
 
 
 
@@ -85,7 +85,7 @@ public class PlayerCharecterStats : MonoBehaviour
     {
         
         //print("base hp " + playerBaseHealth);
-        print("Over all dm " + playerOverAllDMG);
+        //print("Over all dm " + playerOverAllDMG);
 
     }
 }

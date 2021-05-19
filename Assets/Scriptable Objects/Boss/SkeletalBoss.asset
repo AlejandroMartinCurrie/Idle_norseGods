@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d8d03dc943426c49a03c7e931325e19, type: 3}
-  m_Name: SlimeBoss
+  m_Name: SkeletalBoss
   m_EditorClassIdentifier: 
-  bossName: SlimeBoss
-  bossHealth: 40
-  bossDMG: 2
-  bossSprite: {fileID: 21300000, guid: f3f8151b338e3204994cfa9afbbe2bce, type: 3}
+  bossName: Bones
+  bossHealth: 150
+  bossDMG: 6
+  bossSprite: {fileID: 21300000, guid: f989128876aee5f43bfa50baa941acd1, type: 3}
   bossCompleted: 0
-  bossGoldDrop: 100
-  bossExp: 40
+  bossGoldDrop: 175
+  bossExp: 80
