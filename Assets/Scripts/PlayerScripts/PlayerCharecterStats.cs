@@ -14,6 +14,8 @@ public class PlayerCharecterStats : MonoBehaviour
 
     public static float maximumHealth;
 
+    GodSelector godchange;
+
     void Start()
     {
 
@@ -59,8 +61,6 @@ public class PlayerCharecterStats : MonoBehaviour
     }
 
 
-
-
     public void PlayerDamageStatsController()
     {
         if(UpgradeStatsController.dmgUpgraded == 0)
@@ -83,9 +83,13 @@ public class PlayerCharecterStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         //print("base hp " + playerBaseHealth);
         //print("Over all dm " + playerOverAllDMG);
+
+        GetComponentInChildren<SpriteRenderer>().sprite = currentSelectedGod.godImage;
+
+
 
     }
 }
