@@ -11,4 +11,5 @@ public class Gods :ScriptableObject
     public Sprite godImage;
     public int godHealth;
     public int godDamage;
+    public int godID;
 }

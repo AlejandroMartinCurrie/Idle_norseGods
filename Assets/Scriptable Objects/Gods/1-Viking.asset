@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 663ededde4a18244d94c5d37390435ff, type: 3}
-  m_Name: Viking
+  m_Name: 1-Viking
   m_EditorClassIdentifier: 
   godName: Viking
   godImage: {fileID: 21300000, guid: 8766c76a95bc36f4197017f0da2ab8b0, type: 3}
   godHealth: 40
-  godDamage: 3
+  godDamage: 2
+  godID: 1

@@ -14,12 +14,16 @@ public class PlayerCharecterStats : MonoBehaviour
 
     public static float maximumHealth;
 
-    GodSelector godchange;
+
+    public int currentGod;
+
 
     void Start()
     {
 
-        
+        currentGod = PlayerPrefs.GetInt("SelectedGod");
+        currentSelectedGod = FindObjectOfType<GodLists>().godInList[currentGod];
+
 
         UpgradeStatsController.healthUpgraded = PlayerPrefs.GetInt("SavedDataHealth");
         UpgradeStatsController.dmgUpgraded = PlayerPrefs.GetInt("SavedDataDMG");
@@ -55,7 +59,7 @@ public class PlayerCharecterStats : MonoBehaviour
         }
         else if (UpgradeStatsController.healthUpgraded >= 1)
         {
-            playerOverAllHP = PlayerPrefs.GetInt("FullPlayerHealth");
+            playerOverAllHP = PlayerPrefs.GetInt("FullPlayerHealth") + currentSelectedGod.godHealth;
             maximumHealth = playerOverAllHP;
         }
     }
@@ -73,7 +77,7 @@ public class PlayerCharecterStats : MonoBehaviour
         }
         else if (UpgradeStatsController.dmgUpgraded >=1)
         {
-            playerOverAllDMG = PlayerPrefs.GetInt("FullPlayerDMG");
+            playerOverAllDMG = PlayerPrefs.GetInt("FullPlayerDMG") + currentSelectedGod.godDamage;
         }
     }
 
@@ -86,6 +90,8 @@ public class PlayerCharecterStats : MonoBehaviour
 
         //print("base hp " + playerBaseHealth);
         //print("Over all dm " + playerOverAllDMG);
+
+        
 
         GetComponentInChildren<SpriteRenderer>().sprite = currentSelectedGod.godImage;
 
