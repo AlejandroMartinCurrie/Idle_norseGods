@@ -12,4 +12,5 @@ public class Gods :ScriptableObject
     public int godHealth;
     public int godDamage;
     public int godID;
+    public int cardsToUnlock;
 }

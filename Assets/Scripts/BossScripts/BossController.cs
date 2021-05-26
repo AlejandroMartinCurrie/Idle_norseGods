@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class BossController : MonoBehaviour
 {
     public static int bossHP;
+    public static float maximumBossHP;
     public static bool bossDead;
     public static bool bossStageCleared;
     public static bool bossCombat;
@@ -23,6 +24,7 @@ public class BossController : MonoBehaviour
         bossHP = StageController.currentBoss.bossHealth;
         bossDead = StageController.currentBoss.bossCompleted;
         bossDamage = StageController.currentBoss.bossDMG;
+        maximumBossHP = bossHP;
         GetComponentInChildren<SpriteRenderer>().sprite = StageController.currentBoss.bossSprite;
         //bossHP = GetComponentInChildren<ChangeBossSpriteController>().newBoss.bossHealth;
         //bossDead = GetComponentInChildren<ChangeBossSpriteController>().newBoss.bossCompleted;

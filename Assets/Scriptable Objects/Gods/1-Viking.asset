@@ -17,3 +17,4 @@ MonoBehaviour:
   godHealth: 40
   godDamage: 2
   godID: 1
+  cardsToUnlock: 5
